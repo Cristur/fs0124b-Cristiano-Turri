@@ -18,7 +18,7 @@ h1{
     left: 58rem;
     top: 5rem;
     font-size: 1rem ;
-    color: rgb(68, 170, 136);
+    color: rgb(80, 155, 130);
 }
 main{
     max-width: 50rem;
@@ -40,5 +40,5 @@ main div{
 }
 #metodo{
     border-style: hidden hidden solid hidden;
-    border-left-color: rgb(80, 155, 130);
+    border-bottom-color: rgb(80, 155, 130);
 }
