@@ -1,0 +1,44 @@
+.fonts{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: relative;
+}
+#logo-header{
+    width: 15rem;
+    margin-left: 50%;
+}
+#logo{
+    margin-left: -1rem;
+    border-style: hidden hidden solid hidden;
+    border-bottom-color: yellow;
+}
+h1{
+    position: absolute;
+    left: 58rem;
+    top: 5rem;
+    font-size: 1rem ;
+    color: rgb(68, 170, 136);
+}
+main{
+    max-width: 20rem;
+    margin-inline: auto;
+}
+main div{
+    width: 50%;
+}
+#bordo-link{
+    border-style: hidden hidden hidden solid;
+    border-left-color: yellow;
+}
+#titolo-link{
+    color: orange;
+}
+#bordo-ingredienti{
+    border-style: hidden hidden solid hidden;
+    border-bottom-color: rgb(80, 155, 130);
+}
+#metodo{
+    border-style: hidden hidden solid hidden;
+    border-left-color: rgb(68, 170, 136);
+}
