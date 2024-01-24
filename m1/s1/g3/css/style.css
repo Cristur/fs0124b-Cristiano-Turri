@@ -21,7 +21,7 @@ h1{
     color: rgb(68, 170, 136);
 }
 main{
-    max-width: 20rem;
+    max-width: 50rem;
     margin-inline: auto;
 }
 main div{
