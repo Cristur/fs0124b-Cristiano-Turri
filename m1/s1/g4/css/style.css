@@ -1,0 +1,66 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../assets/img/sfondo.png);
+}
+.header {
+    text-align: center;
+    margin: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
+    background-image: linear-gradient(salmon, purple);
+}
+#logo{
+    padding: 10px;
+}
+#scritta-logo{
+    padding: 10px;
+}
+
+.main {
+    background-color: white;
+    text-align: left;
+    margin: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
+    border: 1px solid grey;
+}
+#titolo-principale{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+span{
+color: purple;
+}
+.lista-1 li{
+    list-style-type: disc;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+.lista-2 li{
+    list-style-type: decimal;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+#intro-tabella{
+padding-top: 20px;
+padding-bottom: 20px;
+}
+#titolo-tabella {
+    padding-bottom: 10px;
+}
+caption{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+#tabella-css, th, td{
+    border: 1px solid black;
+}
+
+
+
