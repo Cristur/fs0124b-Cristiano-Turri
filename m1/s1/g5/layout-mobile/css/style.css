@@ -20,14 +20,14 @@ header img{
 #intro{
     background-image: url(../images/banner.jpg);
     max-width: 100%;
-    background-position:contain;
+    background-position: contain;
     padding: 30px;
 }
 .headings{
     color: #25a2c3 ;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    padding: 5px;
+    padding: 10px;
 }
 #intro h1{
     color: #25a2c3 ;
@@ -78,4 +78,24 @@ section img{
 .articoli {
     border: solid 1px #dee1e3;
     margin: 20px 50px;
+    padding-bottom: 30px;
+}
+.articoli a{
+    text-decoration: none;
+    color:black;
+}
+.footer{
+    background-color: #25a2c3;
+    color: white;
+    padding: 30px;
+    margin-top: 80px;
+}
+.footer h2{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+#copyright{
+  padding-top: 60px;
 }
