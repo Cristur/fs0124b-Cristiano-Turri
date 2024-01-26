@@ -20,7 +20,7 @@ header img{
 #intro{
     background-image: url(../images/banner.jpg);
     max-width: 100%;
-    background-position: contain;
+    background-size: contain;
     padding: 30px;
 }
 .headings{
