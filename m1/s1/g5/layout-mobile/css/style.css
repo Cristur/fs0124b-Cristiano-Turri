@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; ;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    max-width: 100%;
+}
+body img{
+    max-width: 100%;
+}
+header {
+    background-color: black;
+}
+header img{
+    padding: 20px;
+    width: 100px;
+}
+#intro{
+    background-image: url(../images/banner.jpg);
+    max-width: 100%;
+    background-position:contain;
+    padding: 30px;
+}
+#intro h1{
+    color: #25a2c3 ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 5px;
+}
+#intro p{
+    padding: 20px 45px;
+}
+#intro a{
+    background-color:#f04c2f;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-family: 'Montserrat';
+    color: white;
+}
+section{
+    padding-top: 30px;
+
+}
+section h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3 ;
+}
+section p{
+    padding: 20px 90px
+}
+section img{
+    max-width: 300px;
+    border-radius:200px ;
+}
+#garanzia {
+    background-color:#e22d0e ;
+    padding: 30px;
+}
+#garanzia {
+    color: white;
+}
+#garanzia h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+}
+#garanzia h2 + p {
+    color: white;
+    padding: 20px;
+}
+.articoli{
+    border: solid 1px #dee1e3;
+}

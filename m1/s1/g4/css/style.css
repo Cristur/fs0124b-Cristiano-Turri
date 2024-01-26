@@ -4,9 +4,9 @@ body{
 }
 .header {
     text-align: center;
-    margin: 10px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 100px;
+    margin-left:100px ;
+    margin-right:100px;
     padding: 20px;
     background-image: linear-gradient(salmon, purple);
 }
