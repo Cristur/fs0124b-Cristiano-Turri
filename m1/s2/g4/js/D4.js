@@ -80,8 +80,9 @@ console.log(check3and7(8))
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
-let reverse= "";
+
 function reverseString(a){
+    let reverse="";
     for(let i=a.length-1; i>=0; i--){
         reverse = reverse + a[i];
     }
@@ -93,8 +94,8 @@ console.log(reverseString("EPICODE"))
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
-let upper;
 function upperFirst(a){
+    let upper;
     upper = a.split(" ");
     for(let i=0; i<upper.length; i++){
       upper[i] = upper[i].charAt(0).toUpperCase() + upper[i].substring(1);
@@ -129,3 +130,5 @@ function giveMeRandom(n){
     return random;
 }
 console.log(giveMeRandom(10))
+
+
