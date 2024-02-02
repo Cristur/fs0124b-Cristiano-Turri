@@ -60,11 +60,12 @@ nav a{
     padding-left: 10px;
 }
 .immagini img{
-    margin-left: 40px;
+    margin-left: 50px;
     width: 250px;
     padding: 10px;
     border-radius: 30px;
     height: 250px;
+    box-shadow: 1px #E1E3E5;
 }
 .immagini div{
     display: inline;
@@ -72,7 +73,7 @@ nav a{
     max-height: 100;
 }
 .box{
-    margin: 10px;
+   
 }
 .paragrafi{
     text-align: center;
