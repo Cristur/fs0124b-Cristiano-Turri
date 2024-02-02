@@ -1,1 +1,113 @@
-/* Your styles here */
+body{
+    padding: 0;
+    margin: 0 auto;
+    line-height: 1;
+    background-color: #E9EDEE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.margin{
+    margin: 30px;
+}
+header{
+    background-color:#222F3F ;
+}
+header img{
+    width: 100px;
+    padding : 10px 30px;
+}
+nav{
+    background-color:#364759;
+    padding: 8px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+.bg-orange{
+    text-align: center;
+    background-color: #F56600;
+    padding: 10px;
+    color: white;
+}
+.bg-green {
+    background-image: url(../assets/images/bg-image.png);
+    background-size: contain;
+    text-align: center;
+    padding: 60px;
+    margin : 30px 0;
+    color: white;
+    line-height: 2.5;
+}
+#holyday{
+    font-size: 30px;
+    font-weight: bold;
+}
+.perfectgift{
+    background-color: white;
+}
+ .perfectgift p {
+    padding: 20px;
+    font-size: 25px;
+    display: inline-block;
+    
+}
+.perfectgift a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #30898E;
+    padding-left: 10px;
+}
+.immagini img{
+    margin-left: 40px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 30px;
+    height: 250px;
+}
+.immagini div{
+    display: inline;
+    padding: 60px;
+    max-height: 100;
+}
+.box{
+    margin: 10px;
+}
+.paragrafi{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.paragrafi p{
+    display: inline;
+    padding: 20px;
+    font-size: 25px;
+   
+}
+.paragrafi a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #30898E;
+    padding-left: 10px;
+}
+.immagini910{
+    margin-top: 50px;
+}
+footer {
+    text-align: center;
+}
+.backtotop{
+    background-color: #364759;
+    padding: 25px;
+}
+.backtotop a{
+    color: white;
+    font-weight: bold;
+}
+.logofooter{
+    background-color:#222F3F ;
+    padding: 70px;
+}
+.logofooter img{
+    width: 200px;
+}

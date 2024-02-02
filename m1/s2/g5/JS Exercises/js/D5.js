@@ -117,14 +117,64 @@ const charactersArray = ["g", "n", "u", "z", "d"];
 let charactersArrPosition = [];
 for (let i = 0; i < charactersArray.length; i++) {
   switch (charactersArray[i]) {
+    case "a":
+      charactersArrPosition[i] = 1;
+      break;
+    case "b":
+      charactersArrPosition[i] = 2;
+      break;
+    case "c":
+      charactersArrPosition[i] = 3;
+      break;
+    case "d":
+      charactersArrPosition[i] = 4;
+    case "e":
+      charactersArrPosition[i] = 5;
+      break;
+    case "f":
+      charactersArrPosition[i] = 6;
+      break;
     case "g":
       charactersArrPosition[i] = 7;
+      break;
+    case "h":
+      charactersArrPosition[i] = 8;
+      break;
+    case "i":
+      charactersArrPosition[i] = 9;
+      break;
+    case "l":
+      charactersArrPosition[i] = 10;
+      break;
+    case "m":
+      charactersArrPosition[i] = 11;
       break;
     case "n":
       charactersArrPosition[i] = 12;
       break;
+    case "o":
+      charactersArrPosition[i] = 13;
+      break;
+    case "p":
+      charactersArrPosition[i] = 14;
+      break;
+    case "q":
+      charactersArrPosition[i] = 15;
+      break;
+    case "r":
+      charactersArrPosition[i] = 16;
+      break;
+    case "s":
+      charactersArrPosition[i] = 17;
+      break;
+    case "t":
+      charactersArrPosition[i] = 18;
+      break;
     case "u":
       charactersArrPosition[i] = 19;
+      break;
+    case "v":
+      charactersArrPosition[i] = 20;
       break;
     case "z":
       charactersArrPosition[i] = 21;
