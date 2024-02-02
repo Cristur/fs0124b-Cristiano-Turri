@@ -179,8 +179,5 @@ for (let i = 0; i < charactersArray.length; i++) {
     case "z":
       charactersArrPosition[i] = 21;
       break;
-    case "d":
-      charactersArrPosition[i] = 4;
-      break;
   }
 }
