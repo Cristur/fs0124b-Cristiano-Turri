@@ -242,18 +242,21 @@ console.log(millennium(movies))
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
-/*function yearSum(arr){
-  let somma = arr.Year.reduce((acc, temp) => acc + temp)
-  return somma;
+function yearSum(arr){
+  return arr.reduce((acc, temp) => acc + temp.Year)
 }
 console.log(yearSum(movies))
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
-function specifiedFilm(movieid){
- return movies.find((el) => el == movieid)
+function specifiedFilm(movie, id){
+ return movie.find((el) => el.imdbID == id)
 }
-console.log(specifiedFilm("tt0120737"))
+console.log(specifiedFilm(movies, "tt0120737"))
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+function specifiedIndex(movie, year){
+ return movie.findIndex((el) => (el.Year) == year)
+}
+console.log(specifiedIndex(movies, "1978"))
