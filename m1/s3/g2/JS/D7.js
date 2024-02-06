@@ -2,35 +2,82 @@
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
+const concatenaStringhe = function(str1, str2){
+  let stringa1 = str1.substring(0, 2);
+  let stringa2 = str2.slice(-3, str2.length);
+  let nuovaStringa = stringa1 + stringa2;
+  nuovaStringa.toUpperCase();
+}
+console.log(concatenaStringhe('ciao', 'hello'))
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-
+const arrayRandom = function(){
+  let arr =[];
+  for(let i=0; i<10; i++){
+     arr[i] = Math.floor(Math.random()*100)
+  }
+  return arr
+}
+console.log(arrayRandom())
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
+const arrPari= [0,1,5,12,26,54,3,7];
+  const nuovoArray = arrPari.filter((arr) => arr%2==0)
+  console.log(nuovoArray);
+
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-
+const arrSomma = function(a){
+  let somma = 0
+  let arrSomma
+  a.forEach((el) => somma += el);
+  arrSomma.push(somma)
+}
+console.log(arrSomma [0,1,5,12,26,54,3,7])
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-
+const arr5 = [1,6,43,56,3,89]
+let arrSomma2 = arr5.reduce((acc, cur) => acc + cur, 0)
+console.log(arrSomma2)
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+let arr6 = [1,6,43,56,3,89]
+let arrIncremento = function(a, n){
+  let arrIncrementato = a.map((x) => x+n)
+  return arrIncrementato
+}
+console.log(arrIncremento(arr6, 1))
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+const arrLunghezza = function(a){
+  let arrStringhe = a.map((b) => a.length) 
+  return arrStringhe
+}
+console.log(arrLunghezza(["ciao", "bello"]))
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+const arrDispari = function(){
+  let arrDispari2 = [];
+  for (let i=0; i<51; i++){
+    if(i%2 !=0){
+      arrDispari2.push(i)
+    }
+  }
+  return arrDispari2;
+}
+
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -151,15 +198,31 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
-
+/*const oldestFilm = function(a){
+  let film = a.forEach((el) => {
+    if(el.Year<film.Year){
+      film.push(el)
+    }
+  })
+  return film;
+}
+console.log(movies.oldestFilm())
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
-
+const totalFilm = function(a){
+  let c=0;
+  for(let i = 0; i<a.length; i++){
+    c++;
+  }
+  return c;
+}
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
-
+const filmTitles = function(a){
+  let arrTitles = a.map((x) => a.Title)
+}
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
