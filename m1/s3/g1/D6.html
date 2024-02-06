@@ -100,18 +100,18 @@
       /* ESERCIZIO 3
        Scrivi una funzione che cambi il testo dei p figli di un div
       */
-      const pChild = document.querySelector("div > p");
+      const pChild = document.querySelectorAll("div p");
       const changePcontent = function () {
-        pChild.innerText = "Testo modificato";
+        pChild.forEach(el => el.innerText = "Testo modificato");
       };
       changePcontent();
 
       /* ESERCIZIO 4
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
       */
-      const modHref = document.querySelector("a");
+      const modHref = document.querySelectorAll("a:not(footer a)");
       const changeUrls = function () {
-        modHref.href = "https://www.google.com";
+        modHref.forEach(el => el.href = "https://www.google.com")
       };
       changeUrls();
 
@@ -159,7 +159,10 @@
       */
       const rimuoviLettera = document.querySelector("h1")
       const makeItClickable = function () {
-        rimuoviLettera.addEventListener
+        rimuoviLettera.addEventListener('click', function(){
+          let substring = rimuoviLettera.innerText.slice(0, -1)
+          rimuoviLettera.innerText= substring;
+        })
 
 
       };
