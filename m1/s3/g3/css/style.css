@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+.inputContainer{
+    margin: 20px;
+}
+.inputContainer input{
+    width: 500px;
+}
+.containerButton{
+    display: inline-block;
+}
+li{
+   padding : 15px;    
+}
