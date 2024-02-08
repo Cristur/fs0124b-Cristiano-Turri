@@ -1,0 +1,30 @@
+.tombolaContainer{
+    background-color: #FEF4E8;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.tombolaContainer h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 80px;
+}
+.tabellone{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tabella{
+    border: 1px solid black;
+    flex: 0 1 calc(100%/5);
+    text-align: center;
+    padding: 10px 10px;
+}
+.estrazione{
+    text-align: center;
+    margin-top: 50px;
+}
+.estratto{
+    background-color: red;
+}
