@@ -158,7 +158,7 @@ function isTodayMyBirthday() {
   if (birthdayDay == 1 && birthdayMonth == 2) {
     return true;
   }
-    return false;
+  return false;
 }
 
 // Arrays & Oggetti
@@ -170,12 +170,16 @@ Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa co
 in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 let object = {
-  prop1: "ciao",
-  prop2: "belli",
+  prop: "ciao",
+  prop: "belli",
 };
-function deleteProp(obj, str) {}
-deleteProp(object, "prop2");
-console.log(object);
+function deleteProp(obj, str) {
+  if(str === obj.str){
+    delete obj.str
+  }
+  return obj
+}
+console.log(deleteProp(object, "prop"));
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 const movies = [
@@ -310,67 +314,108 @@ console.log(newwstMovie(movies));
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
 function countMovies(movies) {
-  return movies.lenght;
+  return movies.length;
 }
 console.log(countMovies(movies));
 /* ESERCIZIO 14 
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
 function onlyTheYears(movies) {
-  return movies.map((movies) => movies.Title);
+  return movies.map((movies) => movies.Year);
 }
 console.log(onlyTheYears(movies));
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
-
+function onlyInLastMillennium(movies) {
+  return movies.filter((el) => el.Year < 2000);
+}
+console.log(onlyInLastMillennium(movies));
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
-
+function sumAllTheYears(movies) {
+  return movies.reduce((acc, temp) => acc + temp.Year);
+}
+console.log(sumAllTheYears(movies));
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
-
+function searchByTitle(movies, str) {
+  return movies.filter((el) => el.Title.includes(str));
+}
+console.log(searchByTitle(movies, "Lord"));
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
-
+function searchAndDivide(movies, str) {
+  let foundFilms = {
+    match: [],
+    unmatch: [],
+  };
+  foundFilms.match = movies.filter((el) => el.Title.includes(str));
+  foundFilms.unmatch = movies.filter((el) => !el.Title.includes(str))
+  return foundFilms;
+}
+console.log(searchAndDivide(movies, "Lord"))
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
-
+function removeIndex(movies, number){
+  return movies.filter((el) => movies.indexOf(el) != number)
+}
+console.log(removeIndex(movies, 3))
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
-
+let container = document.querySelector("#container")
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
-
+let td = document.querySelectorAll("td")
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
-
+function stampaTdText(){
+  let td = document.querySelectorAll("td")
+  td.forEach((el) => console.log(el.innerHTML))
+}
+stampaTdText()
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
-
+ function backgroundRed(){
+  let a = document.querySelectorAll("a")
+  a.forEach((el) => el.style.backgroundColor = "red")
+ }
+ backgroundRed()
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
-
+function newLi(){
+  let myList = document.querySelector("#myList")
+  let li = document.createElement("li")
+  myList.append(li)
+}
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
-
+ function removeLi(){
+  let myList = document.querySelector("#myList")
+  while(myList.firstChild){
+    myList.removeChild(myList.firstChild);
+  }
+ }
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
-
+ function testClass(){
+  let tr = document.querySelectorAll("tr")
+  tr.forEach((el) => el.classList.add("test"))
+ }
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
