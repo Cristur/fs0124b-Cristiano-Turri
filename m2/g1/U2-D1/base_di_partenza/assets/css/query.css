@@ -1,0 +1,25 @@
+@media screen and (min-width: 576px) {
+    header nav li{
+        display: inline;
+    } 
+        .table-container{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media  screen and (min-width: 780px) {
+        header{
+            display: flex;
+
+        }
+        .header-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+    
+    }
+
+    

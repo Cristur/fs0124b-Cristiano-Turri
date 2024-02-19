@@ -391,7 +391,7 @@ stampaTdText()
   let a = document.querySelectorAll("a")
   a.forEach((el) => el.style.backgroundColor = "red")
  }
- backgroundRed()
+
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
@@ -429,7 +429,16 @@ function newLi(){
   ***
 
 */
-
+function halfTree(num){
+ let cont=0;
+ while(cont<num){
+ for(let i=0; i<=cont; i++){
+  console.log("*")
+ }
+ cont++;
+ }
+}
+halfTree(3)
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
