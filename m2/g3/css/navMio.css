@@ -1,0 +1,34 @@
+img{
+    width: 30px;
+}
+
+body{
+    margin: 50px;
+}
+
+
+.container{
+    background-color: #FBF7E3;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 300px;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+.menu li{
+    display: flex;
+    background-color: aqua;
+    flex: 1 1 100px;
+    border-radius: 10px;
+    height: 50px;
+    align-items: center;
+
+}
+
