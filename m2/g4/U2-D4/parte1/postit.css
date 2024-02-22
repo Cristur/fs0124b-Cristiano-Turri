@@ -1,0 +1,50 @@
+body {
+  background-color: #666666;
+  box-sizing: border-box;
+    perspective: 300px;
+
+}
+.container {
+  position: absolute;
+  margin: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px;
+  animation: caduta 1.5s;
+}
+
+.post {
+  flex: 1 1 calc(100% / 4 - 120px);
+  height: 250px;
+  font-size: 50px;
+  text-align: center;
+  -webkit-box-shadow: 15px 34px 11px -24px rgba(0, 0, 0, 0.75),
+    inset -9px -25px 74px -33px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 15px 34px 11px -24px rgba(0, 0, 0, 0.75),
+    inset -9px -25px 74px -33px rgba(0, 0, 0, 0.75);
+  box-shadow: 15px 34px 11px -24px rgba(0, 0, 0, 0.75),
+    inset -9px -25px 74px -33px rgba(0, 0, 0, 0.75);
+    transition: flex-grow 1s;
+}
+.post:hover{
+    flex-grow: 2;
+}
+.yellowPost {
+  background-color: #f9fac8;
+  transform: rotate(-5deg);
+}
+.greenPost {
+  background-color: #c5f3c5;
+  transform: rotate(5deg);
+}
+.violetPost {
+  background-color: #c3c4ef;
+  transform: rotate(-7deg);
+
+}
+
+@keyframes caduta {
+    from{transform: translateZ(1000px);}
+    to{transform: translateZ(0px)}
+}
