@@ -11,7 +11,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 60px;
-  animation: caduta 1.5s;
+  animation: caduta 3s;
 }
 
 .post {
@@ -25,10 +25,11 @@ body {
     inset -9px -25px 74px -33px rgba(0, 0, 0, 0.75);
   box-shadow: 15px 34px 11px -24px rgba(0, 0, 0, 0.75),
     inset -9px -25px 74px -33px rgba(0, 0, 0, 0.75);
-    transition: flex-grow 1s;
+    transition: transform 1s;
 }
 .post:hover{
-    flex-grow: 2;
+    transform: scale(1.4);
+    z-index: 10;
 }
 .yellowPost {
   background-color: #f9fac8;
