@@ -9,9 +9,11 @@ body {
 }
 
 /* HEADER */
-
-.menu {
+header{
   position: sticky;
+  top: 0;
+}
+.menu {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -135,6 +137,9 @@ body {
 .article h2{
     font-weight: bold;
     font-size: 22px;
+}
+.article img{
+  width: 25px;
 }
 .articleImages {
   display: flex;
