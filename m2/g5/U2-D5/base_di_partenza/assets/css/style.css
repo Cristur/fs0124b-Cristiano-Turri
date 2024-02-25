@@ -78,10 +78,10 @@ header{
 
 
 /* TRENDING*/
-.container{
+.trendingContainer{
   border-bottom: 1px solid lightgray;
 }
-.trendingContainer{
+.trendingContainer2{
   display: flex;
   flex-direction: column;
   margin: 50px 0 ;
@@ -195,4 +195,35 @@ gap: 20px;
 .articleImages img {
   flex: 1 1 100px;
   width: 200px;
+}
+
+
+/* TAGCOLLECTOR */
+
+.asideContainer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.tagContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid #F2F2F2;
+}
+.tagList{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+.tagList a{
+  flex: 1 1 calc(100%/3 - 40px);
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: #F2F2F2;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 15px 10px;
 }
