@@ -28,10 +28,10 @@
         <div class="menu">
           <a href="#"><img src="./assets/imgs/svg/logo.svg" alt="logo" /></a>
           <ul>
-            <li><a href="#">Our story</a></li>
-            <li><a href="#">Membership</a></li>
-            <li><a href="#">Write</a></li>
-            <li><a href="#">Sign in</a></li>
+            <li><a class="menuLink" href="#">Our story</a></li>
+            <li><a class="menuLink" href="#">Membership</a></li>
+            <li><a class="menuLink" href="#">Write</a></li>
+            <li><a class="menuLink" href="#">Sign in</a></li>
             <li><a class="start" href="#">Get started</a></li>
           </ul>
         </div>
@@ -40,68 +40,98 @@
     <main>
       <div class="yellowBg">
         <div class="yellowBgText">
-          <h1>Stay curious.</h1>
+          <h1>Stay Curious.</h1>
           <p>
             Discover stories, thinking, and expertise from writers on any topic.
           </p>
           <a class="start" href="#">Start reading</a>
         </div>
-        <div>
+        <div class="mosaico">
           <img src="./assets/imgs/svg/m.svg" alt="non ti animerò mai" />
         </div>
       </div>
-      <div class="trendingContainer">
-        <p>
-          <img src="./assets/imgs/svg/trending.svg" alt="trending" />Trending on
-          Medium
-        </p>
-        <div class="trendingCardsContainer">
-          <ol>
-            <li>
-              <p>
-                <img src="./assets/imgs/image01.jpeg" alt="" />Hayk Simonyan in
-                Level Up /Coding
-              </p>
-              <a href="#">System Design Interview Question: Design Spotify</a>
-              <p>Feb 21,2024 &#11825; 6 min read</p>
-            </li>
-            <li>
-              <p>
-                <img src="./assets/imgs/image02.png" alt="" />Arthur Hayes in
-                Entrepreneur's Handbook
-              </p>
-              <a href="#">Comeback</a>
-              <p>Oct 26, 2024 · 24 min read</p>
-            </li>
-            <li>
-              <p>
-                <img src="./assets/imgs/image03.jpeg" alt="" />Jerry Liu in
-                LlamaIndex Blog
-              </p>
-              <a href="#">Introducing LlamaCloud and LlamaParse</a>
-              <p>Feb 20, 2024 · 8 min read</p>
-            </li>
-            <li>
-              <p>
-                <img src="./assets/imgs/image04.png" alt="" />Amelia Hurren in
-                Long COVID Connection
-              </p>
-              <a href="#">A day in the life of long Covid</a>
-              <p>Feb 21, 2024 · 7 min read</p>
-            </li>
-            <li>
-              <p>
-                <img src="./assets/imgs/image05.jpeg" alt="" />Dr.Jason Fung
-              </p>
-              <a href="#">The OverFeedingParadox</a>
-              <p>Feb 22, 2024 · 7 min read</p>
-            </li>
-            <li>
-              <p><img src="./assets/imgs/image06.png" alt="" />Chet Haase</p>
-              <a href="#">So Long, and Thanks for All the Bytes</a>
-              <p>Feb 17, 2024 · 6 min read</p>
-            </li>
-          </ol>
+      <div class="container">
+        <div class="trendingContainer">
+          <div class="trendingHead">
+            <p>
+              <img
+                src="./assets/imgs/svg/trending.svg"
+                alt="trending"
+              />Trending on Medium
+            </p>
+          </div>
+          <div class="trendingCardsContainer">
+            <p class="trendingIndex">01</p>
+
+            <div class="card">
+              <div class="trendingTitles">
+                <p>
+                  <img src="./assets/imgs/image02.png" alt="" />Jerry Liu
+                  LlamaIndex Blog
+                </p>
+              </div>
+              <h2>Introducing LlamaCloud and LlamaParse</h2>
+              <p>Feb 20,2024 · 8 min read</p>
+            </div>
+            <p class="trendingIndex">02</p>
+            <div class="card">
+              <div class="trendingTitles">
+                <p>
+                  <img src="./assets/imgs/image03.jpeg" alt="" />Jerry Liu
+                  LlamaIndex Blog
+                </p>
+              </div>
+              <h2>Introducing LlamaCloud and LlamaParse</h2>
+              <p>Feb 20,2024 · 8 min read</p>
+            </div>
+            <p class="trendingIndex">03</p>
+            <div class="card">
+              <div class="trendingTitles">
+                <p>
+                  <img src="./assets/imgs/image04.png" alt="" />Jerry Liu
+                  LlamaIndex Blog
+                </p>
+              </div>
+              <h2>Introducing LlamaCloud and LlamaParse</h2>
+              <p>Feb 20,2024 · 8 min read</p>
+            </div>
+            <p class="trendingIndex">04</p>
+
+            <div class="card">
+              <div class="trendingTitles">
+                <p>
+                  <img src="./assets/imgs/image05.jpeg" alt="" />Jerry Liu
+                  LlamaIndex Blog
+                </p>
+              </div>
+              <h2>Introducing LlamaCloud and LlamaParse</h2>
+              <p>Feb 20,2024 · 8 min read</p>
+            </div>
+            <p class="trendingIndex">05</p>
+
+            <div class="card">
+              <div class="trendingTitles">
+                <p>
+                  <img src="./assets/imgs/image06.png" alt="" />Jerry Liu
+                  LlamaIndex Blog
+                </p>
+              </div>
+              <h2>Introducing LlamaCloud and LlamaParse</h2>
+              <p>Feb 20,2024 · 8 min read</p>
+            </div>
+            <p class="trendingIndex">06</p>
+
+            <div class="card">
+              <div class="trendingTitles">
+                <p>
+                  <img src="./assets/imgs/image07.jpeg" alt="" />Jerry Liu
+                  LlamaIndex Blog
+                </p>
+              </div>
+              <h2>Introducing LlamaCloud and LlamaParse</h2>
+              <p>Feb 20,2024 · 8 min read</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="articleContainer">
@@ -117,143 +147,184 @@
               What we consider “old” changes dramatically with age, and our
               perspectives can be predictive of how well we age
             </p>
-            <p>Oct 27 · 5 min read · Aging</p>
-          </div>
-          <div  class="article">
-            <div class="articleTitles">
-            <p>
-              <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
+            <p class="articleDate">
+              Oct 27 · 5 min read · <a href="#">Aging</a>
+              <img src="./assets/imgs/svg/star.svg" alt="" />
+              <img src="./assets/imgs/svg/bookmark.svg" alt="" />
             </p>
-            </div>
-            <h2>How Old is Old?</h2>
-            <p>
-              What we consider “old” changes dramatically with age, and our
-              perspectives can be predictive of how well we age
-            </p>
-            <p>Oct 27 · 5 min read · Aging</p>
           </div>
           <div class="article">
             <div class="articleTitles">
-            <p>
-              <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
-            </p>
+              <p>
+                <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
+              </p>
             </div>
             <h2>How Old is Old?</h2>
             <p>
               What we consider “old” changes dramatically with age, and our
               perspectives can be predictive of how well we age
             </p>
-            <p>Oct 27 · 5 min read · Aging</p>
+            <p class="articleDate">
+              Oct 27 · 5 min read · <a href="#">Aging</a
+              ><img src="./assets/imgs/svg/star.svg" alt="" />
+              <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+            </p>
           </div>
           <div class="article">
             <div class="articleTitles">
-            <p>
-              <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
-            </p>
+              <p>
+                <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
+              </p>
             </div>
             <h2>How Old is Old?</h2>
             <p>
               What we consider “old” changes dramatically with age, and our
               perspectives can be predictive of how well we age
             </p>
-            <p>Oct 27 · 5 min read · Aging</p>
+            <p class="articleDate">
+              Oct 27 · 5 min read · <a href="#">Aging</a
+              ><img src="./assets/imgs/svg/star.svg" alt="" />
+              <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+            </p>
           </div>
           <div class="article">
             <div class="articleTitles">
-            <p>
-              <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
-            </p>
+              <p>
+                <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
+              </p>
             </div>
             <h2>How Old is Old?</h2>
             <p>
               What we consider “old” changes dramatically with age, and our
               perspectives can be predictive of how well we age
             </p>
-            <p>Oct 27 · 5 min read · Aging</p>
+            <p class="articleDate">
+              Oct 27 · 5 min read · <a href="#">Aging</a
+              ><img src="./assets/imgs/svg/star.svg" alt="" />
+              <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+            </p>
           </div>
           <div class="article">
             <div class="articleTitles">
-            <p>
-              <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
-            </p>
+              <p>
+                <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
+              </p>
             </div>
             <h2>How Old is Old?</h2>
             <p>
               What we consider “old” changes dramatically with age, and our
               perspectives can be predictive of how well we age
             </p>
-            <p>Oct 27 · 5 min read · Aging</p>
+            <p class="articleDate">
+              Oct 27 · 5 min read · <a href="#">Aging</a
+              ><img src="./assets/imgs/svg/star.svg" alt="" />
+              <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+            </p>
           </div>
           <div class="article">
             <div class="articleTitles">
-            <p>
-              <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
-            </p>
+              <p>
+                <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
+              </p>
             </div>
             <h2>How Old is Old?</h2>
             <p>
               What we consider “old” changes dramatically with age, and our
               perspectives can be predictive of how well we age
             </p>
-            <p>Oct 27 · 5 min read · Aging</p>
+            <p class="articleDate">
+              Oct 27 · 5 min read · <a href="#">Aging</a
+              ><img src="./assets/imgs/svg/star.svg" alt="" />
+              <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+            </p>
           </div>
           <div class="article">
             <div class="articleTitles">
-            <p>
-              <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
-            </p>
+              <p>
+                <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
+              </p>
             </div>
             <h2>How Old is Old?</h2>
             <p>
               What we consider “old” changes dramatically with age, and our
               perspectives can be predictive of how well we age
             </p>
-            <p>Oct 27 · 5 min read · Aging</p>
+            <p class="articleDate">
+              Oct 27 · 5 min read · <a href="#">Aging</a
+              ><img src="./assets/imgs/svg/star.svg" alt="" />
+              <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+            </p>
           </div>
           <div class="article">
             <div class="articleTitles">
-            <p>
-              <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
-            </p>
+              <p>
+                <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
+              </p>
             </div>
             <h2>How Old is Old?</h2>
             <p>
               What we consider “old” changes dramatically with age, and our
               perspectives can be predictive of how well we age
             </p>
-            <p>Oct 27 · 5 min read · Aging</p>
+            <p class="articleDate">
+              Oct 27 · 5 min read · <a href="#">Aging</a
+              ><img src="./assets/imgs/svg/star.svg" alt="" />
+              <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+            </p>
           </div>
           <div class="article">
             <div class="articleTitles">
-            <p>
-              <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
-            </p>
+              <p>
+                <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
+              </p>
             </div>
             <h2>How Old is Old?</h2>
             <p>
               What we consider “old” changes dramatically with age, and our
               perspectives can be predictive of how well we age
             </p>
-            <p>Oct 27 · 5 min read · Aging</p>
+            <p class="articleDate">
+              Oct 27 · 5 min read · <a href="#">Aging</a
+              ><img src="./assets/imgs/svg/star.svg" alt="" />
+              <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+            </p>
+          </div>
+          <div class="article">
+            <div class="articleTitles">
+              <p>
+                <img src="./assets/imgs/image15.jpeg" alt="" />Robert Roy Britt
+              </p>
+            </div>
+            <h2>How Old is Old?</h2>
+            <p>
+              What we consider “old” changes dramatically with age, and our
+              perspectives can be predictive of how well we age
+            </p>
+            <p class="articleDate">
+              Oct 27 · 5 min read · <a href="#">Aging</a
+              ><img src="./assets/imgs/svg/star.svg" alt="" />
+              <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+            </p>
           </div>
         </div>
         <div class="articleImages">
-          <img src="./assets/imgs/image16.jpg" alt="" />
-          <img src="./assets/imgs/image16.jpg" alt="" />
-          <img src="./assets/imgs/image16.jpg" alt="" /><img
-            src="../assets/imgs/image16.jpg"
+          <img src="./assets/imgs/image08.jpeg" alt="" />
+          <img src="./assets/imgs/image10.jpeg" alt="" />
+          <img src="./assets/imgs/image12.png" alt="" /><img
+            src="../assets/imgs/image14.png"
             alt=""
-          /><img src="./assets/imgs/image16.jpg" alt="" /><img
+          /><img src="./assets/imgs/image18.jpeg" alt="" /><img
             src="./assets/imgs/image16.jpg"
             alt=""
-          /><img src="./assets/imgs/image16.jpg" alt="" /><img
-            src="./assets/imgs/image16.jpg"
+          /><img src="./assets/imgs/image20.jpg" alt="" /><img
+            src="./assets/imgs/image10.jpeg"
             alt=""
           /><img src="./assets/imgs/image16.jpg" alt="" /><img
             src="./assets/imgs/image16.jpg"
             alt=""
           />
         </div>
+        <div></div>
       </div>
     </main>
   </body>

@@ -13,6 +13,7 @@ header{
   position: sticky;
   top: 0;
 }
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -27,89 +28,116 @@ header{
   display: inline-block;
   padding: 10px;
 }
-.menu li a {
+.menu .menuLink{
   text-decoration: none;
+  color: black;
 }
+
 .start {
   color: white;
   background-color: black;
+  text-decoration: none;
   padding: 10px;
   border-radius: 40px;
 }
 
 /* SOTTO HEADER */
-
-.yellowBg {
+.yellowBg{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
   background-color: #ffc017;
+  justify-content: space-around;
   border-bottom: 1px solid black;
+  padding-left: 200px;
 }
-.yellowBg2 {
-  display: flex;
-}
-.yellowBgText {
+.yellowBgText{
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-left: 170px;
   gap: 30px;
 }
-.yellowBgText h1 {
+.yellowBgText h1{
   font-family: "Spectral", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 106px;
 }
-.yellowBgText p {
+.yellowBgText p{
   font-weight: 500;
-  font-size: 17px;
+    font-size: 17px;
 }
 .yellowBgText a {
   width: 170px;
   text-align: center;
   font-weight: bold;
-}
-.yellowBg a {
   text-decoration: none;
   padding: 20px;
 }
 
-/* TRENDING*/
 
-.trendingContainer {
+
+/* TRENDING*/
+.container{
+  border-bottom: 1px solid lightgray;
+}
+.trendingContainer{
   display: flex;
   flex-direction: column;
-  margin: 50px 300px;
+  margin: 50px 0 ;
+  
 }
-.trendingTitle {
+.trendingHead{
   display: flex;
+  margin-left: 300px;
+  margin-bottom: 10px;
 }
-.trendingContainer img {
+.trendingHead p{
+  display: flex;
+  align-items: center;
+}
+.trendingHead img{
+  width: 30px;
+}
+
+.trendingTitles p{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 10px;
+}
+.trendingCardsContainer{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-left: 300px;
+gap: 20px;
+}
+.trendingIndex{
+  font-weight: bold;
+  font-size: 30px;
+  opacity: 0.1;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 calc(100%/3 - 80px);
+}
+.card h2{
+  font-weight: bold;
+  font-size: 15px;
+}
+.card p{
+  font-size:12px;
+}
+
+.card img{
   width: 20px;
 }
-.trendingCardsContainer {
-  display: flex;
-}
-.trendingCardsContainer ol {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 100px;
-}
-.trendingCardsContainer li {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 300px;
-  gap: 20px;
-}
-.trendingCardsContainer a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
+
+
+
 
 /* ARTICOLI*/
 
@@ -126,6 +154,7 @@ header{
 .article {
   display: flex;
   flex-direction: column;
+  width: 500px;
   gap: 10px;
 }
 .articleTitles p {
@@ -141,6 +170,22 @@ header{
 .article img{
   width: 25px;
 }
+.articleDate{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.articleDate img{
+  width: 15px;
+}
+
+.article a{
+  text-decoration: none;
+  color: black;
+  background-color:#F2F2F2;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
 .articleImages {
   display: flex;
   flex-wrap: wrap;
@@ -149,5 +194,5 @@ header{
 }
 .articleImages img {
   flex: 1 1 100px;
-  width: 150px;
+  width: 200px;
 }
