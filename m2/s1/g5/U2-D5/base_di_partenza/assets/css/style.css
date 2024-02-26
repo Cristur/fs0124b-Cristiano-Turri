@@ -199,6 +199,9 @@ gap: 20px;
   flex: 1 1 100px;
   width: 200px;
 }
+.articleDate .bookmark{
+  align-self: flex-end;
+}
 
 
 /* TAGCOLLECTOR */
