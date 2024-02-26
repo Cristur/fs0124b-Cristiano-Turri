@@ -12,6 +12,7 @@ body {
 header{
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .menu {
@@ -22,6 +23,7 @@ header{
   background-color: #ffc017;
   height: 75px;
   border-bottom: 1px solid black;
+  transition: background-color 0.5s;
 }
 .menu li {
   list-style: none;
@@ -39,6 +41,7 @@ header{
   text-decoration: none;
   padding: 10px;
   border-radius: 40px;
+  transition: background-color 0.5s;
 }
 
 /* SOTTO HEADER */
@@ -168,7 +171,7 @@ gap: 20px;
     font-size: 22px;
 }
 .article img{
-  width: 25px;
+  width: 20px;
 }
 .articleDate{
   display: flex;
@@ -199,8 +202,12 @@ gap: 20px;
 
 
 /* TAGCOLLECTOR */
-
+.relativeParent{
+  position: relative;
+}
 .asideContainer{
+  position: sticky;
+  top: 100px;
   display: flex;
   flex-direction: column;
   margin-left: 50px;
@@ -210,15 +217,18 @@ gap: 20px;
   flex-direction: column;
   gap: 20px;
   border-bottom: 1px solid #F2F2F2;
+  margin-left: 50px;
+}
+.tagContainer h3{
+  font-weight: bold;
 }
 .tagList{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-evenly;
+  width:400px;
 }
 .tagList a{
-  flex: 1 1 calc(100%/3 - 40px);
   text-align: center;
   text-decoration: none;
   color: black;
@@ -226,4 +236,22 @@ gap: 20px;
   font-size: 13px;
   border-radius: 20px;
   padding: 15px 10px;
+}
+.btnTopics {
+  text-decoration: none;
+  color: #009900;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.utilityLinks{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 50px;
+  gap: 20px;
+}
+.utilityLinks a{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
 }
