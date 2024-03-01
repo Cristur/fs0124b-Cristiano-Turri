@@ -1,77 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./screenassets/assets/assets/logo.svg" alt=""></a>
-          <div class="row">
-            <div class="col">
-            
-            </div>
-              <i class="bi bi-bell-fill"></i>
-            </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./screenassets/assets/assets/logo.svg" alt=""
+        /></a>
+        <div class="row">
+          <div class="col"></div>
+          <i class="bi bi-bell-fill"></i>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
         </div>
-      </nav>
-      <div class="row">
-        <div class="container">
-            <div class="col-lg-6">
-                <div class="row">
-                    <div class="col">Welcome Web Students!</div>
-                    <div class="col">Hand-picked Instructor and expertly crafted courses, designed for the modern students and entrepreneur</div>
-                    <div class="col">
-                        <div class="row">
-                            <div class="col-6"><a href=""></a></div>
-                            <div class="col-6"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <img src="./screenassets/assets/assets/hero-img.png" alt="">
-            </div>
+      </div>
+    </nav>
+    <div id="hero" class="bg-success pt-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 align-items-center">
+            <h2>Scegli la vita</h2>
+            <p>
+              Hand-picked Instructor and expertly crafted courses, designed for
+              the modern students and entrepreneur
+            </p>
+            <button type="button" class="btn btn-primary btn-sm">
+              Small button
+            </button>
+            <button type="button" class="btn btn-primary btn-sm">
+              Small button
+            </button>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img
+              style="width: 100%"
+              src="./screenassets/assets/assets/hero-img.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-      <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+    </div>
+    <div id="trend" class="container mt-3">
+      <div class="row">
+        <div class="col-12 col-lg-4 d-flex align-items-center gap-3 mb-2">
+          <div class="cerchio bg-primary">
+            <i class="bi bi-camera-video "></i>
+          </div>
+          <div>
+            <h2 class="m-0">30.000</h2>
+            <p class="m-0">asdfjawrkebfaiurjogbesro</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 d-flex align-items-center gap-3 mb-2">
+          <div class="bg-primary cerchio">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <div>
+            <h2 class="m-0">30.000</h2>
+            <p class="m-0">asdfjawrkebfaiurjogbesroiu</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 d-flex align-items-center gap-3 mb-2">
+          <div class="bg-primary cerchio">
+            <i class="bi bi-stopwatch"></i>
+          </div>
+          <div>
+            <h2 class="m-0">30.000</h2>
+            <p class="m-0">asdfjawrkebfaiurjogbesroiu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
