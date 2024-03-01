@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a id="logo" class="navbar-brand" href="#"
+          ><img
+            src="./Netflix-assets/Netflix-assets/assets/netflix_logo.png"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler border"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu drop-down-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row align-items-center flex-nowrap">
+        <div class="col d-flex">
+          <div class="d-flex gap-4 align-items-center">
+            <h1>Tv Shows</h1>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle bg-dark"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genres
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                <li><a class="dropdown-item" href="#">Comedy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-end">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-dark border"><i class="bi bi-justify-left"></i></button>
+                <button type="button" class="btn btn-dark border"><i class="bi bi-grid"></i></button>
+              </div>        </div>
+      </div>
+      <div>
+        <h2>Trending Now</h2>
+        <div class="row gap-2">
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media0.webp"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media10.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media11.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media12.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media13.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>Watch It Again</h2>
+      </div>
+      <div class="row gap-2">
+        <div class="col-12 col-xl-2">
+          <img
+            src="./Netflix-assets/Netflix-assets/assets/media/media0.webp"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-xl-2">
+          <img
+            src="./Netflix-assets/Netflix-assets/assets/media/media1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-xl-2">
+          <img
+            src="./Netflix-assets/Netflix-assets/assets/media/media10.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-xl-2">
+          <img
+            src="./Netflix-assets/Netflix-assets/assets/media/media11.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-xl-2">
+          <img
+            src="./Netflix-assets/Netflix-assets/assets/media/media12.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-xl-2">
+          <img
+            src="./Netflix-assets/Netflix-assets/assets/media/media13.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div>
+        <h2>Trending Now</h2>
+        <div class="row gap-2">
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media0.webp"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media10.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media11.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media12.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-xl-2">
+            <img
+              src="./Netflix-assets/Netflix-assets/assets/media/media13.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+    >
+      <div class="col mb-3">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p class="text-body-secondary">© 2024</p>
+      </div>
+
+      <div class="col mb-3"></div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
