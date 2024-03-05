@@ -24,3 +24,14 @@ c = new User("Mario", "Rossi", "25", "Roma")
 console.log(a.compareAge(b))
 console.log(a.compareAge(c))
 
+let nomeAnimale = document.querySelector("nomeAnimale")
+let nomePropietario = document.querySelector("nomePropietario")
+let specie = document.querySelector("specie")
+let razza = document.querySelector("razza")
+
+let add = document.querySelector("add")
+let listaAnimali = document.querySelector("listaAnimali")
+
+class Pets{
+    constructor()
+}
