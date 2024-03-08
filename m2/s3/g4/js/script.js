@@ -3,7 +3,6 @@ fetch('https://striveschool-api.herokuapp.com/books')
 .then(response => response.json())
 .then(dati => {
 
-    console.log(dati);
     let target = document.querySelector("#target")
     for(let libro of dati){
         let div = document.createElement("div")
