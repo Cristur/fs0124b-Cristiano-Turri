@@ -1,40 +1,39 @@
 fetch("https://striveschool-api.herokuapp.com/api/product/",{
     headers: {
         'Content-type':'application/json',
-        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZGEzYjJkN2IxMTAwMTkwZTZkZWYiLCJpYXQiOjE3MDk4OTAxMDcsImV4cCI6MTcxMTA5OTcwN30.zsDD5gyVPTazmEJrT1GPgji7WoRLj4nP93cUIwb1q3w "
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWViNTNlODJkN2IxMTAwMTkwZTdhMWQiLCJpYXQiOjE3MDk5MjEyNTYsImV4cCI6MTcxMTEzMDg1Nn0.F5UCT97J2pdS3T-JLLFT5h3-4velU_d-kw6CAb_bNUw"
     },
 
 })
 .then (res => res.json())
 .then (nuovoProdotto => {
+    console.log(nuovoProdotto)
     for (let prodotto of nuovoProdotto){
+
         let card = generaClone()
+        
 
         let title = card.querySelector( ".cardTitle")
-        title.inneText = prodotto.name
+        title.innerText ="Nome Prodotto: " + prodotto.name
+
         let brand = card.querySelector(".cardBrand")
-        brand.inneText = prodotto.brand
+        brand.innerText ="Brand: " + prodotto.brand
+
         let price = card.querySelector(".cardPrice")
-        price.inneText = prodotto.price
+        price.innerText ="Prezzo: " + prodotto.price
+
         let description = card.querySelector(".cardDescription")
-        description.inneText = prodotto.description
+        description.innerText ="Descrizione: " + prodotto.description
+
         let image = card.querySelector(".card-img-top")
         image.src = prodotto.imageUrl
+
         let modificaBtn = card.querySelector(".modificaBtn")
         modificaBtn.href = `modifica.html?id=${prodotto._id}` 
-
-        document.querySelector("#target").appendChild(prodotto)
+    
+        document.querySelector("#target").appendChild(card)
     }
     })
-
-
-
-
-
-
-
-
-
 
 function generaClone(){
     

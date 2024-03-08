@@ -1,32 +1,33 @@
-let form = document.querySelector("form")
+let saveBtn = document.querySelector(".saveBtn")
 
-form.addEventListener("submit",(e) => {
+saveBtn.addEventListener("click",(e) => {
     e.preventDefault()
-    let nome = document.querySelector("#name")
-    let brand = document.querySelector("#brand")
-    let prezzo = document.querySelector("#price")
-    let imgUrl = document.querySelector("#imgUrl")
-    let descrizione = document.querySelector("#description")
+
+    let nome = document.querySelector("#name").value
+    let brand = document.querySelector("#brand").value
+    let prezzo = document.querySelector("#price").value
+    let imgUrl = document.querySelector("#imgUrl").value
+    let descrizione = document.querySelector("#description").value
     
     let nuovoProdotto = {
-        name: nome.value,
-        brand : brand.value,
-        description: descrizione.value,
-        price: prezzo.value,
-        imageUrl: imgUrl.value,
+        name: nome,
+        description: descrizione,
+        brand : brand,
+        imageUrl: imgUrl,
+        price: prezzo,
     }
     fetch('https://striveschool-api.herokuapp.com/api/product/', {
 
     method: 'POST',
-    body: JSON.stringify(nuovoProdotto),
     headers: {
         'Content-Type': 'application/json',
-        'Authorization': "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWViMjQ3NDJkN2IxMTAwMTkwZTc4MDAiLCJpYXQiOjE3MDk5MDkxMDgsImV4cCI6MTcxMTExODcwOH0.5obxCI0Z8HG2dnVO4zpWQTMu1p_n5pesJoee1Lc2Wlc"
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWViNTNlODJkN2IxMTAwMTkwZTdhMWQiLCJpYXQiOjE3MDk5MjEyNTYsImV4cCI6MTcxMTEzMDg1Nn0.F5UCT97J2pdS3T-JLLFT5h3-4velU_d-kw6CAb_bNUw"
     },
+    body: JSON.stringify(nuovoProdotto),
 })
 
 .then(res => res.json())
-.then(_res => {
+.then(res => {
 
     location.href = 'index.html'
 })
