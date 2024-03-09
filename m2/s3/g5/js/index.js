@@ -6,30 +6,30 @@ fetch("https://striveschool-api.herokuapp.com/api/product/",{
 
 })
 .then (res => res.json())
-.then (nuovoProdotto => {
-    console.log(nuovoProdotto)
-    for (let prodotto of nuovoProdotto){
+.then (products => {
+    
+    for (let product of products){
 
         let card = generaClone()
         
 
         let title = card.querySelector( ".cardTitle")
-        title.innerText ="Nome Prodotto: " + prodotto.name
+        title.innerText ="Nome Prodotto: " + product.name
 
         let brand = card.querySelector(".cardBrand")
-        brand.innerText ="Brand: " + prodotto.brand
+        brand.innerText ="Brand: " + product.brand
 
         let price = card.querySelector(".cardPrice")
-        price.innerText ="Prezzo: " + prodotto.price
+        price.innerText ="Prezzo: " + product.price
 
         let description = card.querySelector(".cardDescription")
-        description.innerText ="Descrizione: " + prodotto.description
+        description.innerText ="Descrizione: " + product.description
 
         let image = card.querySelector(".card-img-top")
-        image.src = prodotto.imageUrl
+        image.src = product.imageUrl
 
         let modificaBtn = card.querySelector(".modificaBtn")
-        modificaBtn.href = `modifica.html?id=${prodotto._id}` 
+        modificaBtn.href = `modifica.html?id=${product._id}` 
     
         document.querySelector("#target").appendChild(card)
     }
