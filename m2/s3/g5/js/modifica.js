@@ -10,6 +10,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
 
 .then(res => res.json())
 .then(product => {
+
     let name = document.querySelector("#name")
     let brand = document.querySelector("#brand")
     let price = document.querySelector("#price")
@@ -53,4 +54,20 @@ modificaBtn.addEventListener("click", (e) => {
     .then(product => {
         location.href ="index.html"
 })
+})
+
+let eliminaBtn = document.querySelector(".eliminaBtn")
+eliminaBtn.addEventListener("click", (e) => {
+    e.preventDefault()
+    fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
+                method:'DELETE',
+                headers:{
+                    'Content-type':'application/json',
+                    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWViNTNlODJkN2IxMTAwMTkwZTdhMWQiLCJpYXQiOjE3MDk5MjEyNTYsImV4cCI6MTcxMTEzMDg1Nn0.F5UCT97J2pdS3T-JLLFT5h3-4velU_d-kw6CAb_bNUw",
+                }
+            })
+            .then(res => res.json())
+            .then(res => {
+                location.href = 'index.html'
+            })
 })

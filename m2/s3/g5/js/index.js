@@ -30,7 +30,10 @@ fetch("https://striveschool-api.herokuapp.com/api/product/",{
 
         let modificaBtn = card.querySelector(".modificaBtn")
         modificaBtn.href = `modifica.html?id=${product._id}` 
-    
+
+        let scopriBtn = card.querySelector(".scopriBtn")
+        scopriBtn.href = `dettagli.html?id=${product._id}`
+        
         document.querySelector("#target").appendChild(card)
     }
     })
