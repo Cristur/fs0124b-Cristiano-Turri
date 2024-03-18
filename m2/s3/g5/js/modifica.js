@@ -1,5 +1,6 @@
 let url = new URLSearchParams(location.search)
 let id = url.get("id")
+console.log(id)
 
 fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
     headers:{
