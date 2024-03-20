@@ -1,0 +1,65 @@
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Grazie Bootstrap</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+    </ul>
+  </header>
+
+
+<div class="row">
+  <div class="col-6 d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{postsArr[0].title}}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">User Id: {{postsArr[0].userId}}</h6>
+        <p class="card-text">{{postsArr[0].body}}</p>
+        <button type="button" class="btn btn-primary btn-sm">{{postsArr[0].tags[0]}}</button>
+        <button type="button" class="btn btn-primary btn-sm">{{postsArr[0].tags[1]}}</button>
+        <button type="button" class="btn btn-primary btn-sm">{{postsArr[0].tags[2]}}</button>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="col-6 d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{postsArr[1].title}}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">User Id: {{postsArr[0].userId}}</h6>
+        <p class="card-text">{{postsArr[1].body}}</p>
+        <button type="button" class="btn btn-primary btn-sm">{{postsArr[1].tags[0]}}</button>
+        <button type="button" class="btn btn-primary btn-sm">{{postsArr[1].tags[1]}}</button>
+        <button type="button" class="btn btn-primary btn-sm">{{postsArr[1].tags[2]}}</button>
+      </div>
+    </div>
+  </div>
+</div>
+<h2>Potrebbero piacerti Anche</h2>
+<div class="row">
+  <div class="col-4">
+    <div class="col-6 d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{postsArr[0].title}}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">User Id: {{postsArr[0].userId}}</h6>
+          <p class="card-text">{{postsArr[0].body}}</p>
+          <button type="button" class="btn btn-primary btn-sm">{{postsArr[0].tags[0]}}</button>
+          <button type="button" class="btn btn-primary btn-sm">{{postsArr[0].tags[1]}}</button>
+          <button type="button" class="btn btn-primary btn-sm">{{postsArr[0].tags[2]}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
