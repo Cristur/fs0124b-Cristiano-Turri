@@ -1,0 +1,61 @@
+<div class="row">
+  <h2 class="mb-5">Post in evidenza</h2>
+  <div class="col-6">
+    <div class="card" style="width: 20rem">
+      <div class="card-body">
+        <h5 class="card-title">{{ postsArr[0].title }}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">
+          User Id: {{ postsArr[0].userId }}
+        </h6>
+        <p class="card-text">{{ postsArr[0].body }}</p>
+        <button type="button" class="btn btn-primary btn-sm">
+          {{ postsArr[0].tags[0] }}
+        </button>
+        <button type="button" class="btn btn-primary btn-sm">
+          {{ postsArr[0].tags[1] }}
+        </button>
+        <button type="button" class="btn btn-primary btn-sm">
+          {{ postsArr[0].tags[2] }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card" style="width: 20rem">
+      <div class="card-body">
+        <h5 class="card-title">{{ postsArr[1].title }}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">
+          User Id: {{ postsArr[0].userId }}
+        </h6>
+        <p class="card-text">{{ postsArr[1].body }}</p>
+        <button type="button" class="btn btn-primary btn-sm">
+          {{ postsArr[1].tags[0] }}
+        </button>
+        <button type="button" class="btn btn-primary btn-sm">
+          {{ postsArr[1].tags[1] }}
+        </button>
+        <button type="button" class="btn btn-primary btn-sm">
+          {{ postsArr[1].tags[2] }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<h2>Potrebbero piacerti Anche</h2>
+<div class="row">
+  <div *ngFor="let post of randomPostsArray" class="col-3">
+    <div class="col-6 d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{post.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">User Id: {{post.userId}}</h6>
+          <p class="card-text">{{post.body}}</p>
+          <button type="button" class="btn btn-primary btn-sm">{{post.tags[0]}}</button>
+          <button type="button" class="btn btn-primary btn-sm">{{post.tags[1]}}</button>
+          <button type="button" class="btn btn-primary btn-sm">{{post.tags[2]}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
