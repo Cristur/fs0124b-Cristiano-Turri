@@ -1,0 +1,21 @@
+<h1>Questi sarebbero stati i dettagli della macchina peggiore che avresti potuto scegliere</h1>
+<h2>ma purtoppo non sono riuscito a farli comparire</h2>
+<div class="row">
+  <div *ngIf="car != undefined" class="col-6"><div class="card">
+    <img [src]="[car.modelImage]" class="card-img-top" alt="...">
+    <div [ngClass]= "{ 'bg-success': car.available, 'bg-danger' : !car.available}" class="card-body">
+      <h5 class="card-title">{{car.model}}</h5>
+      <p class="card-text">{{car.brand}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Prezzo: {{car.price}} $</li>
+      <li class="list-group-item">Anno : {{car.year}}</li>
+      <li *ngIf="car.available; else elseBlock" class="list-group-item">Modello disponibile</li>
+      <ng-template #elseBlock><li class="list-group-item">Modello non disponibile</li></ng-template>
+    </ul>
+    <div class="card-body">
+      <a [routerLink]="['/car', car.model]"  class="card-link text-decoration-none">Vai a i dettagli dell'auto</a>
+
+    </div>
+  </div>
+</div>

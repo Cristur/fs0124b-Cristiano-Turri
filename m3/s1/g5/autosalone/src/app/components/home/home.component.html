@@ -1,0 +1,32 @@
+
+<div class="row text-center">
+  <h1 class="fw-bold mt-5">Benvenuto nel peggior autosalone del basso Lazio</h1>
+  <p class="fs-4 fw-bold mb-5">Non preoccuparti qui da noi ogni cliente è trattato male alla stessa maniera</p>
+  <p class="fs-4 fw-bold mb-5 border-bottom">Siamo talmente scrausi che abbiamo solo tre marchi di auto, scegli quello che meno preferisci</p>
+  <div class="row loghi-home d-flex align-items-center">
+    <div class="col-4"><a routerLink="Fiat"><img src="../../../assets/loghi/fiat logo.png" alt=""></a></div>
+    <div class="col-4"><a routerLink="Ford"><img src="../../../assets/loghi/ford.png" alt=""></a></div>
+    <div class="col-4"><a routerLink="Audi"><img src="../../../assets/loghi/audi.png" alt=""></a></div>
+  </div>
+  <h2 class="fs-4 mb-5 border-bottom">Peggiori auto in vendita</h2>
+  <div class="row">
+      <div *ngFor="let car of randomCarsArr" class="col-6 d-flex justify-content-around"><div class="card">
+        <img [src]="[car.modelImage]" class="card-img-top" alt="...">
+        <div [ngClass]= "{ 'bg-success': car.available, 'bg-danger' : !car.available}" class="card-body">
+          <h5 class="card-title">{{car.model}}</h5>
+          <p class="card-text">{{car.brand}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Prezzo: {{car.price}} $</li>
+          <li class="list-group-item">Anno : {{car.year}}</li>
+          <li *ngIf="car.available; else danger" class="list-group-item">Modello disponibile</li>
+          <ng-template #danger><li class="list-group-item">Modello non disponibile</li></ng-template>
+        </ul>
+        <div class="card-body d-flex justify-content-between">
+          <a [routerLink]="car.brand" class="card-link text-decoration-none">Tutti i nostri modelli di {{car.brand}}</a>
+          <a [routerLink]="['/car', car.model]" class="card-link text-decoration-none">Vai a i dettagli dell'auto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
