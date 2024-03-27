@@ -9,12 +9,18 @@ import { ProductsService } from '../../products.service';
 })
 export class HomeComponent {
   products:iPhone[] = []
+  favouriteProducts:iPhone[] = []
 
   constructor(private productsSvc:ProductsService){}
 
   ngOnInit(){
     this.productsSvc.getAll().subscribe(res => {
       this.products = res.products})
+  }
+
+
+  addToFavourites(product:iPhone){
+    this.favouriteProducts.push(product)
   }
 }
 
