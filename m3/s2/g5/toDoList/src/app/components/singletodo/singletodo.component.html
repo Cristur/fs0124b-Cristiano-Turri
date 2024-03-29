@@ -1,0 +1,11 @@
+<div class="row mb-3">
+  <div class="col-12 d-flex align-items-center gap-4" [ngClass]="{'bg-success-subtle': todo.completed, 'bg-danger-subtle': !todo.completed}">
+    <label class="">
+      <input type="checkbox" [checked]="todo.completed" (click) = "check(todo.id)">
+    </label>
+    <div>
+      <h2>{{todo.todo}}</h2>
+      <p>Todo of: {{todo.user?.firstName}} {{todo.user?.lastName}}</p>
+    </div>
+  </div>
+</div>
