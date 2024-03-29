@@ -934,9 +934,8 @@ export class TodoService {
 
   check(id:number){
     let checked = this.todos.find( todo => todo.id == id)
-    if (checked){
-      checked.completed = !checked.completed
-    }
+      checked!.completed = !checked!.completed
+
 
 
   }
