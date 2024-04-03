@@ -1,0 +1,60 @@
+<form [formGroup]="form">
+  <input
+    type="text"
+    required
+    formControlName="nome"
+    class="form-control"
+    placeholder="nome"
+  />
+
+  <input
+    type="text"
+    required
+    formControlName="cognome"
+    class="form-control"
+    placeholder="cognome"
+  />
+
+  <input
+    type="password"
+    required
+    formControlName="password"
+    class="form-control"
+    placeholder="password"
+  />
+
+  <input
+    type="password"
+    required
+    formControlName="confermaPassword"
+    class="form-control"
+    placeholder="Conferma Password"
+  />
+  <div *ngIf="confermaPassword("'paswword', 'confermaPassword'")" class="alert alert-danger">
+    le password non combiaciano
+  </div>
+
+
+    <label for="genere" class="m-3"> Genere: </label>
+      <select formControlName="genere" id="genere" >
+      <option *ngFor="let g of generi" [value]="g">{{g}}</option>
+      </select>
+
+  <input
+    type="textarea"
+    required
+    formControlName="biografia"
+    class="form-control"
+    placeholder="biografia"
+  />
+
+  <input
+    type="text"
+    required
+    formControlName="username"
+    class="form-control"
+    placeholder="username"
+  />
+
+  <button routerLink="/login" [disabled]="form.invalid" class="btn btn-success my-5">Invia</button>
+</form>
