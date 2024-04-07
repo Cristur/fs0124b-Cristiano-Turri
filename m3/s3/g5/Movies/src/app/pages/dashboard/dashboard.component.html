@@ -1,0 +1,13 @@
+
+<div class="row row-cols-4">
+  <div class="card text-white p-0 my-3" *ngFor="let film of films">
+    <img [src]="film.image" class="card-img" [alt]="film.title">
+    <div class="card-img-overlay">
+      <div class="d-flex flex-column justify-content-between">
+        <h5 class="card-title">{{film.title}}</h5>
+        <p class="card-text">{{film.plot}}</p>
+        <p class="card-text"><small>{{film.year}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>

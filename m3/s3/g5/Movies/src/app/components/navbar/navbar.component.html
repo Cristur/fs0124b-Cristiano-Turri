@@ -1,0 +1,12 @@
+<div class="container">
+  <header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills gap-2">
+      <li class="nav-item"><a routerLink="/dashboard" *ngIf="isUserLoggedIn" class="btn btn-warning text-black" aria-current="page">Home</a></li>
+      <li class="nav-item"><a routerLink="/login" *ngIf="!isUserLoggedIn" class="btn btn-warning text-black">Login</a></li>
+      <li class="nav-item"><a routerLink="/register" *ngIf="!isUserLoggedIn" class="btn btn-warning text-black">Register</a></li>
+      <li class="nav-item"><a routerLink="/profile" *ngIf="isUserLoggedIn" class="btn btn-warning text-black">Profile</a></li>
+      <li class="nav-item"><a routerLink="/users" *ngIf="isUserLoggedIn" class="btn btn-warning text-black">User</a></li>
+      <li class="nav-item"><a (click)="logout()" *ngIf="isUserLoggedIn" class=" btn btn-danger">LogOut</a></li>
+    </ul>
+  </header>
+</div>

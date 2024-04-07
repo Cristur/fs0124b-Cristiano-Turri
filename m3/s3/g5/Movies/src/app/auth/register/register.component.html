@@ -1,0 +1,35 @@
+<div class="row align-items-center g-lg-5 py-5">
+  <div class="col-lg-7 text-center text-lg-start">
+    <h1 class="display-4 fw-bold lh-1 text-white mb-3">Benvenuto su <span class="text-warning">iTurri</span></h1>
+    <p class="col-lg-10 fs-4 text-white">Il peggior sito di streaming che avresti potuto scegliere, non preoccuparti, TI DELUDEREMO!</p>
+  </div>
+  <div class="col-md-10 mx-auto col-lg-5">
+    <form class="p-4 p-md-5 rounded-3 bg-black" data-np-autofill-form-type="register" data-np-checked="1" data-np-watching="1">
+      <h1 class="text-warning text-center mb-4">iTurri</h1>
+      <div class="form-floating mb-3">
+        <input type="text" name="firstName" [(ngModel)]="registerData.firstName" class="form-control" id="floatingFirstName" placeholder="name@example.com" data-np-autofill-field-type="email" data-np-uid="7fd57750-7211-4f44-bb2f-ef59b4195a89">
+        <label for="floatingFirstName">First Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" name="lastName" [(ngModel)]="registerData.lastName" class="form-control" id="floatingLastName" placeholder="name@example.com" data-np-autofill-field-type="email" data-np-uid="7fd57750-7211-4f44-bb2f-ef59b4195a89">
+        <label for="floatingLastName">Last Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" name="email" [(ngModel)]="registerData.email" class="form-control" id="floatingEmail" placeholder="name@example.com" data-np-autofill-field-type="email" data-np-uid="7fd57750-7211-4f44-bb2f-ef59b4195a89">
+        <label for="floatingFirstName">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" name = "password" [(ngModel)]="registerData.password" class="form-control" id="floatingPassword" placeholder="Password" data-np-autofill-field-type="newPassword" data-np-uid="e6015509-8ae4-426b-ad9f-10cf584db6da">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="checkbox mb-3">
+      </div>
+      <div class="d-flex flex-wrap gap-3">
+        <button (click)="signUp()" class="w-100 btn btn-lg btn-success" type="submit">Register</button>
+
+      </div>
+      <hr class="my-4">
+      <small class="text-warning">By clicking Sign up, you agree to the terms of use.</small>
+    </form>
+  </div>
+</div>

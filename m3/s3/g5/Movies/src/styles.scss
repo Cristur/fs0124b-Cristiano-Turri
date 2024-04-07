@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+
+@import 'bootstrap/scss/bootstrap';
+
+
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./assets/image/backgroundMovies.jpg");
+  background-position: center center;
+  text-shadow: #000 1px 5px 15px;
+}
