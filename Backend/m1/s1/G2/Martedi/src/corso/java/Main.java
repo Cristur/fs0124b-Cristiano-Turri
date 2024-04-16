@@ -1,14 +1,15 @@
 package corso.java;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
     System.out.println(stringaPariDispari("ciao"));
     System.out.println(annoBisestile(3));
     numeroCompreso();
+    stringToChar();
+    countdown();
     }
     public static boolean stringaPariDispari(String str){
         boolean b = false;
@@ -51,9 +52,27 @@ public class Main {
                 throw new IllegalStateException("Invalid number: " + numero);
         }
     }
-    public static String [] stringToChar(){
-        System.out.println("Scrivi una frase: ");
-        String str = new Scanner(System.in).next();
-
+    public static void stringToChar(){
+        boolean end = false;
+        String[] charString;
+        while(!end){
+            System.out.println("Scrivi una frase, o inserisci il comando :q per terminare");
+            String str = new Scanner(System.in).next();
+            if(str.equals(":q")){
+                end = true;
+                return;
+            }
+            else {
+                charString = str.split("");
+                System.out.println(Arrays.toString(charString));
+            }
+        }
+    }
+    public static void countdown(){
+        System.out.print("Inserisci un numero:");
+        int numero = new Scanner(System.in).nextInt();
+        for(int i = numero; i>0; i--){
+            System.out.println(i);
+        }
     }
 }
