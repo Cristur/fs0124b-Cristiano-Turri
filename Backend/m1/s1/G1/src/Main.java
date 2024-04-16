@@ -1,7 +1,6 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
      int moltiplicazione = moltiplica(20, 30);
@@ -10,7 +9,6 @@ public class Main {
      System.out.println(strConcatenata);
      String[] strConcatenata2 = concatena2(new String[]{"ciao", "mi", "chiamo", "Cristiano", "Turri"}, "we");
      System.out.println(Arrays.toString(strConcatenata2));
-
     }
 
 
@@ -33,4 +31,5 @@ public class Main {
 
        return array;
     }
+
 }
