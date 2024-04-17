@@ -14,12 +14,12 @@ public class Main {
     public static boolean stringaPariDispari(String str){
         boolean b = false;
         if(str.length()%2 == 0){
-            return b = true;
-
+            //return b = true;
+            b=true;
         }
-        else{
+        //else{
             return b;
-        }
+        //}
     }
     public static boolean annoBisestile(int anno){
         boolean b = false;
@@ -52,6 +52,8 @@ public class Main {
                 throw new IllegalStateException("Invalid number: " + numero);
         }
     }
+
+
     public static void stringToChar(){
         boolean end = false;
         String[] charString;
@@ -60,7 +62,7 @@ public class Main {
             String str = new Scanner(System.in).next();
             if(str.equals(":q")){
                 end = true;
-                return;
+                //return;
             }
             else {
                 charString = str.split("");
@@ -68,6 +70,9 @@ public class Main {
             }
         }
     }
+
+
+
     public static void countdown(){
         System.out.print("Inserisci un numero:");
         int numero = new Scanner(System.in).nextInt();
