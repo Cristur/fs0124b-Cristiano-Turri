@@ -4,7 +4,7 @@ public class Book extends Article {
     private String author;
     private String genre;
 
-    public Book(String title, int ISBN, int year, int pages, String author, String genre) {
+    public Book(String title, Long ISBN, int year, int pages, String author, String genre) {
         super(title, ISBN, year, pages);
         this.author = author;
         this.genre = genre;
@@ -25,4 +25,16 @@ public class Book extends Article {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+    @Override
+    public String toString() {
+        return "This is the list of our Books: [" +
+                "\nISBN:" + this.getISBN() +
+                "\nTitle:" + this.getTitle() +
+                "\nYear:" + this.getYear() +
+                "\nPages:" + this.getPages() +
+                "\nAuthor:" + author +
+                "\nGenre:" + genre +
+                "\n]";
+    }
+
 }

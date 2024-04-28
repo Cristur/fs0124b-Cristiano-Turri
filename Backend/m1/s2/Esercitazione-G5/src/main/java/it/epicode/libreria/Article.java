@@ -1,23 +1,23 @@
 package it.epicode.libreria;
 
 public abstract class Article {
-    private int ISBN;
+    private Long ISBN;
     private String title;
     private int year;
     private int pages;
 
-    public Article(String title, int ISBN, int year, int pages) {
+    public Article(String title, Long ISBN, int year, int pages) {
         this.title = title;
         this.ISBN = ISBN;
         this.year = year;
         this.pages = pages;
     }
 
-    public int getISBN() {
+    public Long getISBN() {
         return ISBN;
     }
 
-    public void setISBN(int ISBN) {
+    public void setISBN(Long ISBN) {
         this.ISBN = ISBN;
     }
 
@@ -44,4 +44,5 @@ public abstract class Article {
     public void setPages(int pages) {
         this.pages = pages;
     }
+
 }
