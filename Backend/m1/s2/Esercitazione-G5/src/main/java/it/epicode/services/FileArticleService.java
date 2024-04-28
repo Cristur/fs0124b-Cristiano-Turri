@@ -1,6 +1,5 @@
 package it.epicode.services;
 
-import ch.qos.logback.core.rolling.helper.FileStoreUtil;
 import it.epicode.libreria.Article;
 import it.epicode.libreria.Book;
 import it.epicode.libreria.Magazine;
@@ -31,7 +30,7 @@ public class FileArticleService implements ArticleService {
             FileUtils.delete(f);
         } catch (IOException err) {
             IOException e = err;
-            logger.error("Eccezione durante l'eliminazione", e);
+            logger.error("Exception during delete", e);
         }
         articles.forEach(e -> {
             try {

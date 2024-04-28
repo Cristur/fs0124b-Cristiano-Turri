@@ -1,7 +1,6 @@
 package it.epicode.services;
 
 import it.epicode.libreria.Article;
-import it.epicode.libreria.Book;
 
 import java.util.ArrayList;
 import java.util.List;
