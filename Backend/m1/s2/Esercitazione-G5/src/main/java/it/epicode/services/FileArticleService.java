@@ -4,6 +4,7 @@ import ch.qos.logback.core.rolling.helper.FileStoreUtil;
 import it.epicode.libreria.Article;
 import it.epicode.libreria.Book;
 import it.epicode.libreria.Magazine;
+import it.epicode.libreria.Periodicity;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +12,6 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -52,15 +52,26 @@ public class FileArticleService implements ArticleService {
         });
     }
 
-    public void load() throws IOException{
+    public void load() throws IOException {
         File f = new File(STORAGE);
         List<String> lines = FileUtils.readLines(f, StandardCharsets.ISO_8859_1);
         for (String line : lines) {
-            String[] properties =line.split(",");
-            if(parts.lenght == 6){
-                try{
+            String[] properties = line.split(",");
+            if (properties.length == 6) {
+                try {
                     articles.add(new Book(properties[1], Integer.parseInt(properties[2]), Integer.parseInt(properties[3]), properties[4], properties[5]));
+                } catch (NumberFormatException e) {
+                    logger.error("Error on ISBN format", e.getMessage());
                 }
+            } else if (properties.length == 5) {
+                try {
+                    Periodicity periodicity = Periodicity.valueOf(properties[4]);
+                    articles.add(new Magazine(properties[1], Integer.parseInt(properties[2]), Integer.parseInt(properties[3]), periodicity));
+                } catch (NumberFormatException e) {
+                    logger.error("Error on ISBN format", e.getMessage());
+
+                }
+
             }
         }
     }

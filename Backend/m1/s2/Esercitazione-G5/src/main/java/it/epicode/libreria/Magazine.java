@@ -3,8 +3,8 @@ package it.epicode.libreria;
 public class Magazine extends Article {
     private Periodicity periodicity;
 
-    public Magazine(String title, Long ISBN, int year, int pages, Periodicity periodicity) {
-        super(title, ISBN, year, pages);
+    public Magazine(String title, int year, int pages, Periodicity periodicity) {
+        super(title, year, pages);
         this.periodicity = periodicity;
     }
 

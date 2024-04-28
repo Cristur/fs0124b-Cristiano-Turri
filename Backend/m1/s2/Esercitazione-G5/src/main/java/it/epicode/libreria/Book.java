@@ -4,8 +4,8 @@ public class Book extends Article {
     private String author;
     private String genre;
 
-    public Book(String title, Long ISBN, int year, int pages, String author, String genre) {
-        super(title, ISBN, year, pages);
+    public Book(String title, int year, int pages, String author, String genre) {
+        super(title, year, pages);
         this.author = author;
         this.genre = genre;
     }

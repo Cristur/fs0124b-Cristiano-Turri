@@ -18,9 +18,6 @@ public abstract class Article {
         return ISBN;
     }
 
-    public void setISBN(Long ISBN) {
-        this.ISBN = ISBN;
-    }
 
     public String getTitle() {
         return title;
