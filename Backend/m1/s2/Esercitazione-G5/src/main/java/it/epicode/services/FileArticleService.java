@@ -1,5 +1,6 @@
 package it.epicode.services;
 
+import ch.qos.logback.core.rolling.helper.FileStoreUtil;
 import it.epicode.libreria.Article;
 import it.epicode.libreria.Book;
 import it.epicode.libreria.Magazine;
@@ -10,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -48,6 +50,19 @@ public class FileArticleService implements ArticleService {
                 logger.error("Exception:", exception);
             }
         });
+    }
+
+    public void load() throws IOException{
+        File f = new File(STORAGE);
+        List<String> lines = FileUtils.readLines(f, StandardCharsets.ISO_8859_1);
+        for (String line : lines) {
+            String[] properties =line.split(",");
+            if(parts.lenght == 6){
+                try{
+                    articles.add(new Book(properties[1], Integer.parseInt(properties[2]), Integer.parseInt(properties[3]), properties[4], properties[5]));
+                }
+            }
+        }
     }
 
 

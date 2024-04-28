@@ -1,14 +1,15 @@
 package it.epicode.libreria;
 
 public abstract class Article {
+    private static long counter = 0;
     private Long ISBN;
     private String title;
     private int year;
     private int pages;
 
-    public Article(String title, Long ISBN, int year, int pages) {
+    public Article(String title, int year, int pages) {
+        this.ISBN = counter++;
         this.title = title;
-        this.ISBN = ISBN;
         this.year = year;
         this.pages = pages;
     }
