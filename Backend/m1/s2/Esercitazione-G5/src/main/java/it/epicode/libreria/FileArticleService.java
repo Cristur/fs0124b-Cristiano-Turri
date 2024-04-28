@@ -1,9 +1,5 @@
-package it.epicode.services;
+package it.epicode.libreria;
 
-import it.epicode.libreria.Article;
-import it.epicode.libreria.Book;
-import it.epicode.libreria.Magazine;
-import it.epicode.libreria.Periodicity;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
