@@ -27,6 +27,14 @@ public class JpaEventoDAO extends JpaBaseDao implements EventoDAO {
 
     @Override
     public void delete() {
-
+        try {
+            log.debug("Deleting {}");
+            var t = em.getTransaction();
+            t.begin();
+            em.remove(this);
+            t.commit();
+        } catch (Exception e) {
+            log.error("Exception deleting entity...", e);
+        }
     }
 }
