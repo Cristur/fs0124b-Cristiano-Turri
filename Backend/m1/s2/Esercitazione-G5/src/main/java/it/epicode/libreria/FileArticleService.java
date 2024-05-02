@@ -40,6 +40,7 @@ public class FileArticleService implements ArticleService {
                     var lines = List.of(e.getISBN().toString() + "," + e.getTitle() + "," + e.getYear() + "," + e.getPages() + "," + ((Magazine) e).getPeriodicity());
                     FileUtils.writeLines(f, StandardCharsets.ISO_8859_1.name(), lines, true);
                 }
+                
 
             } catch (IOException exception) {
                 logger.error("Exception:", exception);
