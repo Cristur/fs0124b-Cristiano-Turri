@@ -13,7 +13,6 @@
                       value="postgresql" />
             <property name="jakarta.persistence.jdbc.driver"
                       value="org.postgresql.Driver" />
-
             <property name="hibernate.default_schema" value="public" />
             <property name="hibernate.dialect"
                       value="org.hibernate.dialect.PostgreSQLDialect" />
