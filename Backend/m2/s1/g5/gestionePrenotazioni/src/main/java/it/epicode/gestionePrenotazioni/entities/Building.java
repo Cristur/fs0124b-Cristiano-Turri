@@ -6,12 +6,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 @Builder(setterPrefix = "with")
-
 public class Building extends BaseEntity{
     private String name;
     private String address;

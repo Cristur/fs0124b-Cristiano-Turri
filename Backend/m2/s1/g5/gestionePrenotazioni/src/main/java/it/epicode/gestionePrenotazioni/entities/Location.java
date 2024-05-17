@@ -6,10 +6,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
+@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 @Builder(setterPrefix = "with")
 
 public class Location extends BaseEntity{
@@ -18,6 +20,8 @@ public class Location extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private Type type;
     private long maxOccupants;
+    @ManyToOne
+    @JoinColumn(name = "building_id")
     private Building building;
     private Boolean free;
 }
