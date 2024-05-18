@@ -1,9 +1,6 @@
 package it.epicode.gestionePrenotazioni.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -15,7 +12,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Builder(setterPrefix = "with")
 public class Reservation extends BaseEntity {
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "location_id")
     private Location location;
     @ManyToOne

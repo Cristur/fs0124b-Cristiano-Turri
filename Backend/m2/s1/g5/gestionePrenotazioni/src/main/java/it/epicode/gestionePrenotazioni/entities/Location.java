@@ -23,5 +23,4 @@ public class Location extends BaseEntity{
     @ManyToOne
     @JoinColumn(name = "building_id")
     private Building building;
-    private Boolean free;
 }
