@@ -48,5 +48,16 @@ public class DeviceController {
         deviceService.delete(id);
         return ResponseEntity.noContent().build();
     }
+    @PostMapping("/{deviceId}/assign")
+    public ResponseEntity<Device> assignDevice(@PathVariable Long deviceId, @RequestParam Long workerId) {
+        Device assignedDevice = deviceService.assingDevice(deviceId, workerId);
+        return ResponseEntity.ok(assignedDevice);
+    }
+
+    @PostMapping("/{deviceId}/unassign")
+    public ResponseEntity<Device> unassignDevice(@PathVariable Long deviceId) {
+        Device unassignedDevice = deviceService.unassignDevice(deviceId);
+        return ResponseEntity.ok(unassignedDevice);
+    }
 }
-}
+

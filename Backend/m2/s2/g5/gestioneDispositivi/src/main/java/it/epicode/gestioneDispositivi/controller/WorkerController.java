@@ -45,4 +45,5 @@ public class WorkerController {
         workerService.delete(id);
         return ResponseEntity.noContent().build();
     }
+
 }

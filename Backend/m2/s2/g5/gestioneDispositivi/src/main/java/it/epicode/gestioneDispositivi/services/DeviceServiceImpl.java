@@ -90,7 +90,7 @@ public class DeviceServiceImpl implements DeviceService{
     }
 
     @Override
-    public Device unassignDevice(Long workerId, Long deviceId) {
+    public Device unassignDevice( Long deviceId) {
         var d = devices.findById(deviceId)
                 .orElseThrow(() -> new RuntimeException("Device not found"));
         d.setWorker(null);
@@ -98,6 +98,4 @@ public class DeviceServiceImpl implements DeviceService{
 
         return devices.save(d);
     }
-}
-}
 }
