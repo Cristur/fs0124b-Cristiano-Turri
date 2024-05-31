@@ -18,6 +18,6 @@ import java.util.List;
 public class Role extends BaseEntity {
     @Column(length = 15, unique = true)
     String name;
-    @OneToMany(mappedBy = "role", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "role", cascade = CascadeType.ALL)
     private final List<User> users = new ArrayList<>();
 }

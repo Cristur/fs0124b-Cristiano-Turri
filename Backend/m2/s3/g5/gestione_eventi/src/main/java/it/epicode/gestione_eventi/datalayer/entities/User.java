@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -17,9 +18,8 @@ public class User extends BaseEntity {
     private String username;
     private String email;
     private String password;
-    @ManyToOne
-    @JoinColumn(name = "role_id")
-    private Role role;
     @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
-    private List<Booking> bookings;
+    private List<Role> roles = new ArrayList<>();
+    @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+    private List<Booking> bookings = new ArrayList<>();
 }
