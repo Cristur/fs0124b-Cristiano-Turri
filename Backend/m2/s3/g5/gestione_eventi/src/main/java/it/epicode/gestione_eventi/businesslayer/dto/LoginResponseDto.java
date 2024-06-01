@@ -15,7 +15,6 @@ public class LoginResponseDto extends DtoBase {
     private long id;
     private String username;
     private String password;
-    private String email;
     private final List<String> roles;
     private String token;
 

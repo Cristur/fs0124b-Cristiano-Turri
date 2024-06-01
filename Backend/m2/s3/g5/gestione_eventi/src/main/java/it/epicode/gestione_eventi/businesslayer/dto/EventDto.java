@@ -5,12 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.time.LocalDateTime;
+
+
 @Data
 @EqualsAndHashCode(callSuper = false, onlyExplicitlyIncluded = true)
 @Builder(setterPrefix = "with")
 @AllArgsConstructor
-public class RegisterUserDto extends DtoBase{
-    private String username;
-    private String password;
-    private String roles;
+public class EventDto extends DtoBase{
+    private String name;
+    private LocalDateTime startDate;
+    private LocalDateTime endDate;
+    private String description;
+
 }

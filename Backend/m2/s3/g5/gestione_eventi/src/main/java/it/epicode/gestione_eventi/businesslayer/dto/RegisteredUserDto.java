@@ -14,6 +14,5 @@ import java.util.List;
 public class RegisteredUserDto extends DtoBase{
     private long id;
     private String username;
-    private String email;
     private final List<String> roles;
 }
