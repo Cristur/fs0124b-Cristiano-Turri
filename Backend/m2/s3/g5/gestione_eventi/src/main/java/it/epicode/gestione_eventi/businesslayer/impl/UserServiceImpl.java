@@ -23,6 +23,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 @Service
 @Slf4j
@@ -35,7 +36,7 @@ public class UserServiceImpl implements UserService {
     UsersRepository users;
 
     @Autowired
-    private RolesRepository rolse;
+    private RolesRepository roles;
 
     @Autowired
     private AuthenticationManager auth;
